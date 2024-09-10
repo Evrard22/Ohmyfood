@@ -1,0 +1,496 @@
+@import url('http://fonts.cdnfonts.com/css/roboto');
+@import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
+
+::before::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0%;
+    font-family: "roboto", sans-serif;
+}
+
+header {
+
+    margin: 0px;
+    box-shadow: 0 0 0.5rem rbg(0 0 0 / 25%);
+    padding: 0.3rem;
+    text-align: center;
+    position: relative;
+    font-family: "shrikhand", cursive;
+
+    .fa-arrow-left {
+        font-size: 25px;
+        color: black;
+        position: absolute;
+        left: 0px;
+        margin-left: 5%;
+        top: 15px;
+    }
+}
+
+main {
+    padding: 0 3rem;
+
+    @media (max-width: 1000px) {
+        padding: 0 1rem;
+
+    }
+}
+
+
+h1,
+h3,
+h4,
+p {
+    margin: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+main .city {
+    background-color: #f3f3f3;
+    align-items: center;
+    padding: 0.5rem;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    gap: 1rem;
+
+}
+
+main .city i {
+    font-size: 1.5rem;
+}
+
+.explorer {
+    text-align: center;
+    font-size: 2rem;
+}
+
+.explorer p {
+    font-size: 1rem;
+}
+
+.explorer button {
+    font-weight: 300;
+    font-size: 1.5rem;
+    padding: 1rem 2rem;
+    background-image: linear-gradient(to top, rgba(147, 86, 220, 0.9), rgba(225, 121, 218, 0.9));
+    border: none;
+    border-radius: 2rem;
+    box-shadow: 2px 1px 16px -3px #000000;
+    margin-top: 1rem;
+    cursor: pointer;
+}
+
+.tuto {
+    margin: bottom 2rem;
+    ;
+    counter-reset: steps;
+
+    & ol {
+        display: flex;
+        gap: 2rem;
+
+        @media (max-width: 1000px) {
+            flex-direction: column;
+        }
+    }
+
+    & li {
+        position: relative;
+        list-style-type: none;
+        background-color: #f6f6f6f6;
+        padding: 1.5rem 2rem;
+        flex-grow: 1;
+        ;
+        cursor: pointer;
+        border-radius: 1rem;
+        box-shadow: 2px 1px 16px -3px #000000;
+
+        &::before {
+            content: counter(steps);
+            counter-increment: steps;
+            background-image: linear-gradient(to top, rgba(147, 86, 220, 0.9), rgba(225, 121, 218, 0.9));
+            border-radius: 50%;
+            place-items: center;
+            display: grid;
+            width: 2rem;
+            height: 2rem;
+            position: absolute;
+            bottom: 1rem;
+            left: -1rem;
+        }
+
+        &:hover {
+            transform: scale(1.02);
+        }
+
+        & i.fas {
+            color: gray;
+            margin-right: 1rem;
+            font-size: 1.5rem;
+        }
+    }
+}
+
+.menus {
+    background-color: #e7e7e7;
+    margin-bottom: 2rem;
+}
+
+
+.menus__cards {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 2rem;
+}
+
+.new {
+    position: relative;
+}
+
+.new::before {
+    content: "Nouveau";
+    position: absolute;
+    height: 2rem;
+    width: 5rem;
+    background-color: #99E2D0;
+    display: grid;
+    place-items: center;
+    right: 1rem;
+    top: 1rem;
+}
+
+.card {
+    &__image {
+        height: 15rem;
+        background-size: cover;
+        border-radius: 1rem 1rem 0 0;
+    }
+
+    &__image-1 {
+        background-image: url("../Images/restaurants/menu-3.jpg");
+    }
+
+    &__image-2 {
+        background-image: url("../Images/restaurants/menu-2.jpg");
+    }
+
+    &__image-3 {
+        background-image: url("../Images/restaurants/menu-1.jpg");
+    }
+
+    &__image-4 {
+        background-image: url("../Images/restaurants/menu-4.jpg");
+    }
+
+    &__description {
+        position: relative;
+        background-color: white;
+        border-radius: 0 0 1rem 1rem;
+
+        i {
+            font-size: 2rem;
+            position: absolute;
+            right: 1rem;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+        .fas {
+
+            color: transparent;
+            background-image: linear-gradient(to top, rgba(147, 86, 220, 0.9), rgba(225, 121, 218, 1));
+            background-clip: text;
+            -webkit-background-clip: text;
+            opacity: 0;
+            transition: all 200ms;
+        }
+
+        .fas:hover {
+            opacity: 1;
+            transform: translateY(-50%) scale(1.2);
+        }
+    }
+
+    h3,
+    p {
+        padding: 0.3em;
+    }
+}
+
+
+
+/**** la palette du gout ****/
+.banner img {
+    width: 100%;
+    height: 60vh;
+    object-fit: cover;
+    display: block;
+
+}
+
+.resto__title {
+
+    position: relative;
+    margin-top: -3rem;
+    margin-bottom: -1.4rem;
+
+}
+
+.resto__title h2 {
+    font-family: "shrikhand", sans-serif;
+    position: relative;
+    padding: 2rem 1rem;
+    border-radius: 2rem 2rem 0 0;
+    background: #e7e7e7;
+
+}
+
+.resto__title i {
+    font-size: 2rem;
+    position: absolute;
+    right: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.resto__title .fas {
+
+    color: transparent;
+    background-image: linear-gradient(to top, rgba(147, 86, 220, 0.9), rgba(225, 121, 218, 1));
+    background-clip: text;
+    -webkit-background-clip: text;
+    opacity: 0;
+    transition: all 200ms;
+
+
+}
+
+.fas:hover {
+    opacity: 1;
+    transform: translateY(-50%) scale(1.2);
+}
+
+/***** menus *****/
+.resto__mainn {
+    padding: -1;
+    background-color: #e7e7e7;
+
+}
+
+h4 {
+    padding: 0;
+}
+
+.menuss {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    text-align: justify;
+
+    @media (max-width: 1000px) {
+
+        padding: 0 1rem;
+    }
+
+    h3 {
+        text-transform: uppercase;
+        font-weight: 400;
+        position: relative;
+
+        &::after {
+            content: "";
+            position: absolute;
+            top: 1.5rem;
+            left: 0;
+            height: 0.25rem;
+            width: 3rem;
+            background-color: #99E2D0;
+        }
+
+    }
+
+    .menuss__category {
+
+
+        overflow: hidden;
+
+
+        .menu-item {
+            @for $i from 1 through 3 {
+                &:nth-child(#{$i}) {
+                    animation-delay: 100ms * $i ;
+                }
+            }
+
+            display: flex;
+            overflow: hidden;
+            border-radius: 1rem;
+            overflow: hidden;
+            margin: 0.5rem;
+            background: white;
+            box-shadow: 2px 1px 16px -3px #928f8f;
+            animation: appear 1s;
+
+            @keyframes appear {
+                0% {
+                    transform: translateY(50%);
+                    opacity: 0;
+                }
+
+                100% {
+                    transform: translateY(0);
+                    opacity: 1;
+                }
+
+            }
+
+            .menu-item__price {
+                margin-left: auto;
+                font-weight: 900;
+                padding: 1rem;
+                display: flex;
+                align-items: flex-end;
+            }
+
+            .menu-item__description {
+                padding: 1rem;
+                overflow: hidden;
+            }
+
+            h4,
+            p {
+                overflow: hidden;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+
+            }
+
+            .menu-item__check {
+                border-radius: 0 1rem 1rem 0;
+                background-color: #99E2D0;
+                margin-right: -4rem;
+                width: 4rem;
+                transition: margin-right 0.5s;
+                flex-shrink: 0;
+                display: grid;
+                place-items: center;
+
+                i {
+                    display: grid;
+                    place-items: center;
+                    background-color: white;
+                    aspect-ratio: 1;
+                    width: 2rem;
+                    border-radius: 1rem;
+                    color: #99E2D0;
+                }
+            }
+        }
+
+        &:hover {
+            cursor: pointer;
+
+            .menu-item__check {
+                margin-right: 0;
+            }
+
+            i {
+                animation: quarterspin 0.5s ease-in-out;
+
+                @keyframes quarterspin {
+                    0% {
+                        transform: rotate(-270deg);
+                    }
+
+                    100% {
+                        transform: rotate(0);
+                    }
+                }
+            }
+
+
+        }
+
+    }
+}
+
+section .order {
+    height: 30vh;
+    display: grid;
+    place-items: center;
+
+
+    button {
+        font-weight: 300;
+        font-size: 1.5rem;
+        padding: 1rem 2rem;
+        background-image: linear-gradient(to top, rgba(147, 86, 220, 0.9), rgba(225, 121, 218, 0.9));
+        border: none;
+        border-radius: 2rem;
+        box-shadow: 2px 1px 16px -3px #000000;
+        margin-top: 1rem;
+        cursor: pointer;
+
+    }
+}
+
+/**** animation-loader ****/
+.loader {
+    position: fixed;
+    display: grid;
+    place-items: center;
+    background-color: #ffffff;
+    height: 100vh;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    opacity: 0.9;
+    animation: disappear 200ms 6s forwards;
+    transform-origin: top;
+
+    i {
+        animation: spin 3s infinite;
+        color: #99E2D0;
+    }
+
+
+}
+
+@keyframes disappear {
+
+    to {
+        transform: scale(0);
+    }
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg)
+    }
+}
+
+footer {
+    background-color: #353535;
+    padding: 1rem 2rem;
+    color: white;
+
+    h2 {
+        font-family: "Shrikhand", "sans-serif";
+        font-weight: 500;
+        padding: 1rem 0;
+    }
+
+    p {
+        padding: 0.2rem;
+    }
+}
