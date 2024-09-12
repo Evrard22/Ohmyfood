@@ -170,24 +170,9 @@ main .city i {
 .card {
     &__image {
         height: 15rem;
-        background-size: cover;
+       object-fit: cover;
         border-radius: 1rem 1rem 0 0;
-    }
-
-    &__image-1 {
-        background-image: url("../Images/restaurants/menu-3.jpg");
-    }
-
-    &__image-2 {
-        background-image: url("../Images/restaurants/menu-2.jpg");
-    }
-
-    &__image-3 {
-        background-image: url("../Images/restaurants/menu-1.jpg");
-    }
-
-    &__image-4 {
-        background-image: url("../Images/restaurants/menu-4.jpg");
+        width: 100%;
     }
 
     &__description {
@@ -259,6 +244,7 @@ main .city i {
     right: 1rem;
     top: 50%;
     transform: translateY(-50%);
+
 }
 
 .resto__title .fas {
@@ -269,6 +255,7 @@ main .city i {
     -webkit-background-clip: text;
     opacity: 0;
     transition: all 200ms;
+    cursor: pointer;
 
 
 }
@@ -489,8 +476,14 @@ footer {
         font-weight: 500;
         padding: 1rem 0;
     }
+    .gap{
+        display: flex;
+        gap: 10px;
+    }
 
     p {
         padding: 0.2rem;
+     
     }
+
 }

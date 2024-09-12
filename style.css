@@ -157,20 +157,9 @@ main .city i {
 
 .card__image {
   height: 15rem;
-  background-size: cover;
+  object-fit: cover;
   border-radius: 1rem 1rem 0 0;
-}
-.card__image-1 {
-  background-image: url("../Images/restaurants/menu-3.jpg");
-}
-.card__image-2 {
-  background-image: url("../Images/restaurants/menu-2.jpg");
-}
-.card__image-3 {
-  background-image: url("../Images/restaurants/menu-1.jpg");
-}
-.card__image-4 {
-  background-image: url("../Images/restaurants/menu-4.jpg");
+  width: 100%;
 }
 .card__description {
   position: relative;
@@ -238,6 +227,7 @@ main .city i {
   -webkit-background-clip: text;
   opacity: 0;
   transition: all 200ms;
+  cursor: pointer;
 }
 
 .fas:hover {
@@ -423,6 +413,10 @@ footer h2 {
   font-family: "Shrikhand", "sans-serif";
   font-weight: 500;
   padding: 1rem 0;
+}
+footer .gap {
+  display: flex;
+  gap: 10px;
 }
 footer p {
   padding: 0.2rem;
