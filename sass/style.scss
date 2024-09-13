@@ -311,11 +311,7 @@ h4 {
 
 
         .menu-item {
-            @for $i from 1 through 3 {
-                &:nth-child(#{$i}) {
-                    animation-delay: 100ms * $i ;
-                }
-            }
+         
 
             display: flex;
             overflow: hidden;
@@ -324,6 +320,9 @@ h4 {
             margin: 0.5rem;
             background: white;
             box-shadow: 2px 1px 16px -3px #928f8f;
+
+            /*****apparition des elements****/
+
             animation: appear 1s;
 
             @keyframes appear {
@@ -364,7 +363,7 @@ h4 {
                 border-radius: 0 1rem 1rem 0;
                 background-color: #99E2D0;
                 margin-right: -4rem;
-                width: 4rem;
+                width: 5rem;
                 transition: margin-right 0.5s;
                 flex-shrink: 0;
                 display: grid;
