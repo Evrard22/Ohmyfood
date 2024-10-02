@@ -4,115 +4,381 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Accueil - Ohmyfood</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Film location agency</title>
+    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
         integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 </head>
 
-
 <body>
-    <div class="loader">
-    <i class="fas fa-circle-notch fa-5x "></i>
-</div>
-        <header>
-           <h1>ohmyfood</h1>
-        </header>
-        <main>
-            <div class="city">
-                <i class="fas fa-map-marker-alt"></i>
-                <h2>Paris, Belleville</h2>
+    <header id="heee">
+        <nav>
+            <div class="menu">
+                <h1> Film location agency </h1>
+                <div class="menu">
+                    <a class="lien-menu" href="#Catégories">Catégories</a>
+                    <a class="lien-menu" href="#Contact">Contact</a>
+                    <a class="lien-men" href="#panier"><i class="fa-duotone fa-solid fa-cart-shopping"></i></a>
+                </div>
+
+
+                <i class="fa-solid fa-font-awesome"></i>
+                <div class="line00">
+                    <p class="line1">Durée:</p>
+                    <p class="line2">02h45min</p>
+
+                </div>
+                <div class="line0">
+                    <i class="fa-solid fa-star"></i>
+                    <p class="line"></i>7</p>
+                    <p class="line"> Saison</p>
+                    <p class="lineg">3</p>
+                    <p class="line">-Episode</p>
+                    <p class="lineg">21</p>
+                    <p class="line">-Une veille énnemie</p>
+
+                </div>
+                <h3> Xena la guerrière</h3>
+                <h4>Xena et gabrielle se rendent en Angleterre en compagnie d'un pretre <br> monnothéiste pour y
+                    affrontr
+                    jules César.Mais Gabrielle est faite <br> prisonnière par ce dernier...</h4>
             </div>
-           
-            <section class="explorer">
-                <h2 class="">Réservez le menu qui<br>vous convient</h2>
-                <p class="">Découvrez des restaurants d'exception,<br>séléctionnés par nos soins</p>
-                <button class="">Explorer nos restaurants</button>
+            <section class="order">
+                <button class="order0"><i class="fa-solid fa-list"></i>Détails</button>
+                <button class="order1"><i class="fa-solid fa-cart-shopping"></i>Ajouter au panier</button>
+                <div class="mnuu">
+                    <i class="fa-solid fa-minus"></i>
+                    <div class="mnu">
+                        <i class="fa-solid fa-minus"></i>
+                    </div>
+                    <i class="fa-solid fa-minus"></i>
+                </div>
+            </section>
+        </nav>
+    </header>
+    <div>
+        <a href="La-palette-du-gout.html" class="card new"></a>
+        <img class="images1" src="img/xenaBanner.jpg" alt="first">
+    </div>
+
+    <main>
+        <h2>Recherchez un film, une serie ou un<br>dessin animé</h2>
+
+
+        <form method="get" id="rechercher">
+            <div class="form-wrapper">
+                <input type="search" value="Rechercher..." required>
+                <button class="btn-rechercher btn-rechercher-normal">Rechercher</button>
+            </div>
+
+
+            <div id="filtres">
+                <span><b> Catégories: </b></span>
+                <div class="liste-filtres">
+                    <a class="lien-filtre" href="#">
+                        <div class="filtre">
+                            <p class="txt-filtre">Action</p>
+                        </div>
+                    </a>
+
+                    <a class="lien-filtre" href="#">
+                        <div class="filtre">
+                            <p class="txt-filtre">Horreur</p>
+                        </div>
+                    </a>
+
+                    <a class="lien-filtre" href="#">
+                        <div class="filtre">
+                            <p class="txt-filtre">Animation</p>
+                        </div>
+                    </a>
+
+                    <a class="lien-filtre" href="#">
+                        <div class="filtre">
+                            <p class="txt-filtre">Romance</p>
+                        </div>
+                    </a>
+
+                    <a class="lien-filtre" href="#">
+                        <div class="filtre">
+                            <p class="txt-filtre">Avenrure</p>
+                        </div>
+                    </a>
+
+                    <a class="lien-filtre" href="#"></a>
+                    <div class="filtre">
+                        <p class="txt-filtre">Drame</p>
+                    </div>
+                    </a>
+                </div>
+            </div>
+
+
+
+            <section class="bloc-contenu heb" id="tendances">
+
+
+                <h5>Tendances du moment</h5>
+                <div class="fleche">
+                    <i class="fa-solid fa-arrow-left"></i>
+                    <i class="fa-solid fa-arrow-right"></i>
+                </div>
+                <div class="liste-tendances">
+                    <article class="contenu-tendances">
+                        <a class="lien-tendances" href="#">
+                            <img class="img-tendances" src="img/action1.jpg" alt="Photo de l'Auberge la Cannebière">
+
+                            <h6 class="nom-tendances">FREEDOM</h6>
+                            <span class="prix-tendances">Action</span>
+                            <div class="avis-tendances">
+                                <p> 5000 pour 2j </p>
+
+                            </div>
+                        </a>
+                    </article>
+
+                    <article class="contenu-tendances">
+                        <a class="lien-tendances" href="#">
+                            <img class="img-tendances" src="img/anime1.jpg" alt="Photo de l'Hotêl du port">
+                            <h6 class="nom-tendances">KOATI</h6>
+                            <span class="prix-tendances">Animation</span>
+                            <div class="avis-tendances">
+                                <p>5000 pour 2j</p>
+                            </div>
+                        </a>
+                    </article>
+
+                    <article class="contenu-tendances">
+                        <a class="lien-tendances" href="#">
+                            <img class="img-tendances" src="img/romance1.jpg" alt="Photo de l'Hôtel Les mouettes">
+                            <h6 class="nom-tendances">After 4</h6>
+                            <span class="prix-tendances">Romance</span>
+                            <div class="avis-tendances">
+                                <p>7000 pour 2j</p>
+                            </div>
+                        </a>
+                    </article>
+
+                    <article class="contenu-tendances">
+                        <a class="lien-tendances" href="#">
+                            <img class="img-tendances" src="img/horreur1.jpeg" alt="Photo de l'Hôtel de la mer">
+                            <h6 class="nom-tendances">Pil</h6>
+                            <span class="prix-tendances">Horreur</span>
+                            <div class="avis-tendances">
+                                <p>10 000 pour 2j</p>
+                            </div>
+                        </a>
+                    </article>
+                    <p class="plus">voir plus</p>
+
             </section>
 
-            <section class="tuto">
-                <h2>Fonctionnement</h2>
-                <ol>
 
-                    <li><i class="fas fa-mobile-alt"></i>Choisissez un restaurant</li>
+            <section class="bloc-contenu heb" id="tendances">
 
-                    <li><i class="fas fa-list-ul"></i>Composez votre menu</li>
 
-                    <li><i class="fas fa-store"></i>Degustez au restaurant</li>
+                <h7>En exclusivité</h7>
 
-                </ol>
-        </section>
-   
-        <section class="menus">
-            <h2>restaurants</h2>
-          <div class="menus__cards">
-        
-            <a href="La-palette-du-gout.html" class="card new">
-               <img class="card__image card__image-1" src="Images/restaurants/menu-1.jpg"  alt=""></img>
-                <div class="card__description">
-                  <h3>La palette du gout</h3>
-                  <p>Ménimoltant</p>
-                  <i class="far fa-heart"></i>
-                  <i class="fas fa-heart"></i>
+                <div class="fleche1">
+                    <i class="fa-solid fa-arrow-left"></i>
+                    <i class="fa-solid fa-arrow-right"></i>
                 </div>
-            </a> 
-            <a  href="La-note-enchante.html" class="card new">
-                <img class="card__image card__image-1" src="Images/restaurants/menu-2.jpg"  alt=""></img>
-                <div class="card__description">
-                    <h3>La note enchantéé</h3>
-                  <p>Charonne</p>
-                  <i class="far fa-heart"></i>
-                  <i class="fas fa-heart"></i>
+                <div class="liste-exclusivité">
+                    <article class="contenu-tendances">
+                        <a class="lien-tendances" href="#">
+                            <img class="img-tendances" src="img/action2.jpg" alt="Photo de l'Auberge la Cannebière">
 
-                </div>
-            </a>  
-            <a  href="A-la-francaise.html" class="card">
-                <img class="card__image card__image-1" src="Images/restaurants/menu-3.jpg"  alt=""></img>
-                <div class="card__description">
-                    <h3>À la française</h3>
-                  <p>Cité Rouge</p>
-                  <i class="far fa-heart"></i>
-                  <i class="fas fa-heart"></i>
+                            <h6 class="nom-tendances">BLACK ADAM</h6>
+                            <span class="prix-tendances">Action</span>
+                            <div class="avis-tendances">
+                                <p> 8000 pour 2j </p>
 
-                </div>
-            </a> 
-            <a  href="Le-delice-des-sens.html" class="card">
-                <img class="card__image card__image-1" src="Images/restaurants/menu-4.jpg"  alt=""></img>
-                <div class="card__description">
-                    <h3>Le délice des sens</h3>
-                    <p>Folie-Méricourt</p>
-                    <i class="far fa-heart"></i>
-                    <i class="fas fa-heart"></i>
-                </div>
-             </a>
+                            </div>
+                        </a>
+                    </article>
+
+                    <article class="contenu-tendances">
+                        <a class="lien-tendances" href="#">
+                            <img class="img-tendances" src="img/anime2.jpeg" alt="Photo de l'Hotêl du port">
+                            <h6 class="nom-tendances">PIL</h6>
+                            <span class="prix-tendances">Animation</span>
+                            <div class="avis-tendances">
+                                <p>5000 pour 2j</p>
+                            </div>
+                        </a>
+                    </article>
+
+                    <article class="contenu-tendances">
+                        <a class="lien-tendances" href="#">
+                            <img class="img-tendances" src="img/romance2.jpg" alt="Photo de l'Hôtel Les mouettes">
+                            <h6 class="nom-tendances">ME BEFORE YOU</h6>
+                            <span class="prix-tendances">Romance</span>
+                            <div class="avis-tendances">
+                                <p>7000 pour 2j</p>
+                            </div>
+                        </a>
+                    </article>
+
+                    <article class="contenu-tendances">
+                        <a class="lien-tendances" href="#">
+                            <img class="img-tendances" src="img/horreur2.jpeg" alt="Photo de l'Hôtel de la mer">
+                            <h6 class="nom-tendances">STEPHEN KINGS IT</h6>
+                            <span class="prix-tendances">Horreur</span>
+                            <div class="avis-tendances">
+                                <p>10 000 pour 2j</p>
+                            </div>
+                        </a>
+                    </article>
+                    <p class="plus1">voir plus</p>
+            </section>
+
+            <div class="banner"><img src="img/filmBanner.jpeg" alt="">
+                <p class="center">Lorem ipsim doior sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    incididunt ut labore et dolore magna aliqua. <br> Utenim ad minim ad minim veniam, quis nostrud
+                    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Duis aute <br>irure dolor in
+                    reprehenderit in voluptate veliit esse cillum dolore eu fugiat nulla pariatur.</p>
+                <button class="newbutton">Voir toutes les catégories</button>
             </div>
-       </section> 
-    
-
-    </main>
 
 
-<footer>
-    <h2 class="deco">ohmyfood</h2>
-    <p class="gap">
-        <i class="fas fa-utensils"></i>
-        Proposer un restaurant
-    </p>
+            <section class="bloc-contenu heb" id="tendances"></section>
 
-    <p class="gap">
-        <i class="fas fa-hands-helping"></i>
-        Devenir partenaire
-    </p>
 
-    <p>Mentions légales</p>
+            <h8>Dans les prochaines sorties</h8>
+            <div class="fleche2">
+                <i class="fa-solid fa-arrow-left"></i>
+                <i class="fa-solid fa-arrow-right"></i>
+            </div>
+            <div class="liste-prochaines">
+                <article class="contenu-tendances">
+                    <a class="lien-tendances" href="#">
+                        <img class="img-tendances" src="img/action2.jpg" alt="Photo de l'Auberge la Cannebière">
 
-    <p>
-       <a href="evrardidjack@gmail.com">Contact</a> 
-    </p>
+                        <h6 class="nom-tendances">FREEDOM</h6>
+                        <span class="prix-tendances">Action</span>
+                    </a>
+                </article>
 
-</footer>
+                <article class="contenu-tendances">
+                    <a class="lien-tendances" href="#">
+                        <img class="img-tendances" src="img/anime2.jpeg" alt="Photo de l'Hotêl du port">
+                        <h6 class="nom-tendances">KOATI</h6>
+                        <span class="prix-tendances">Animation</span>
+                    </a>
+                </article>
+
+                <article class="contenu-tendances">
+                    <a class="lien-tendances" href="#">
+                        <img class="img-tendances" src="img/romance2.jpg" alt="Photo de l'Hôtel Les mouettes">
+                        <h6 class="nom-tendances">After 4</h6>
+                        <span class="prix-tendances">Romance</span>
+                    </a>
+                </article>
+
+                <article class="contenu-tendances">
+                    <a class="lien-tendances" href="#">
+                        <img class="img-tendances" src="img/horreur2.jpeg" alt="Photo de l'Hôtel de la mer">
+                        <h6 class="nom-tendances">Pil</h6>
+                        <span class="prix-tendances">Horreur</span>
+                    </a>
+                </article>
+                <p class="plus">voir plus</p>
+
+                </section>
+
+                <section class="end">
+            
+                <h9>Contact</h9>
+
+                <div class="flex"> 
+
+                    <i  class="fa-solid fa-house"></i>
+                    <p>Adresse</p>
+                    <p class="pflex">#123,Numéro de ville, Yaoundé, Ngousso</p>
+                </div>
+
+                <div class="flex">
+                    <i class="fa-solid fa-phone-volume"></i>
+                    <p>Information de contact</p>
+                    <p class="pflex1">+237 000 000 000</p>
+                </div>
+
+
+                <div class="flex">
+                    <i class="fa-solid fa-message"></i>
+                    <p>Adresse e-mail</p>
+                    <p class="pflex2">contact@ubix-group.com</p>
+                </div>
+            </section>
+                <button class="lastbutton">CONTACTEZ-NOUS</button>
+</main> 
+
+
+    <footer id="laster">
+
+<h10> Film location agency</h10>
+
+<p class="foot-p">"Plus d'action, plus d'émotion"</p>
+
+<i class="fa-solid fa-up-long"></i>
+<div class="appli">
+    <i class="fa-brands fa-square-facebook"></i>
+    <i class="fa-brands fa-instagram"></i>
+    <i class="fa-brands fa-twitter"></i>
+    <i class="fa-regular fa-envelope"></i>
+    <i class="fa-brands fa-linkedin"></i>
+
+
+</div>
+
+
+        <div class="ul">
+            <span class="categorie-footer">Catégories</span>
+            <ul>
+                <li>
+                    <a class="lien-footer" href="#">Action</a>
+                </li>
+                <li>
+                    <a class="lien-footer" href="#">Horreur</a>
+                </li>
+                <li>
+                    <a class="lien-footer" href="#">Animation</a>
+                </li>
+                <li>
+                    <a class="lien-footer" href="#">Romance</a>
+                </li>
+                <li>
+                    <a class="lien-footer" href="#">Drame</a>
+                </li>
+               
+            </ul>
+        </div>
+        <div class="ul1">
+            <span class="categorie-footer">Liens rapides</span>
+            <ul>
+                <li>
+                    <a class="lien-footer" href="#">Accueil</a>
+                </li>
+                <li>
+                    <a class="lien-footer" href="#">A propos</a>
+                </li>
+                <li>
+                    <a class="lien-footer" href="#">Catégories</a>
+                </li>
+                <li>
+                    <a class="lien-footer" href="#">Conditions et termes</a>
+                </li>
+                <li>
+                    <a class="lien-footer" href="#">d'utilisation</a>
+                </li>
+              
+            </ul>
+        </div>
+
+
+    </footer>
+
 </body>
+
 </html>
